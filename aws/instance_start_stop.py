@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 import boto3,os
 
+instance_id = input("Enter Instance id: ")
+
 def instance_action(): 
   client = boto3.client('ec2')
   response = client.describe_instances()
